@@ -4,36 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebeb14d25b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <title>Home</title>
+    <style>
+        .d1{
+            
+            height: 100%;
+            width: 100%;
+            background-image: url("images/backgroundimg.jpg");
+            background-size: cover;
+          
+        }
+        .main-cont{
+          height: 100%;
+          padding: 10px;
+        }
+        .main-body-text{
+            margin-left: 30px;
+            font-size: 35px;
+            font-weight:bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+         .btn-grad {
+            margin: 30px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            font-size: 20px;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+           
+            text-decoration: none;
+          }
+          .card-cont{
+           
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items:center;
+            align-items: center;
+            
+            
+          }
+          .card:hover{
+            color: white;
+            background-image: linear-gradient(to right, rgb(255, 106, 0) , rgb(255, 132, 0));
+          }
+          .video{
+            
+          margin-right: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+          }
+          .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          .footer{
+             height: 15%;
+             width: 100%;
+             background-color: rgba(0, 213, 255, 0.11);
+             margin-top: 1195%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+           }
+
+          @media(min-width:768px){
+            video{
+              
+             height: 80%;
+             width: 80%;
+            }
+            .img1{
+              padding: 5px;
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+            }
+            .img2{
+              padding: 5px;
+              width: 100%;
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+            }
+            .footer{
+            margin-top: 420%;
+          }
+           
+          }
+         @media(min-width:1024px){
+          .card-cont-main{
+            height: 100%;
+            /* margin-bottom: 100px; */
+          }
+          .heading1{
+            width: 100%;
+            margin-top: 20px;
+            /* border: 5px solid blue; */
+          }
+
+          .video{
+            height: 100%;
+            width: 100%;
+            
+            margin-top: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+          }
+         
+            
+         .last-cont{
+          margin-top: 500px;
+         }
+          .heading2{
+            width: 100%;
+           
+            /* border: 5px solid blue; */
+          }
+
+          .images{
+            
+            height: 100%;
+            
+            width: 100%;
+            margin-bottom: 50px;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items:center;
+
+           
+          }
+          .footer{
+            margin-top: 213%;
+          }
+          
+          }
+         
+    </style>
 </head>
 <body>
-  <div class="d1" >
+  <div class="d1">
     <nav>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#" style="color: white;">Home</a>
             </li>
             <li>
-                <a href="about.html">About</a>
+                <a href="about.html" style="color: white;">About</a>
             </li>
             <li>
-                <a href="services.html">Sevices</a>
+                <a href="services.html" style="color: white;">Sevices</a>
             </li>
             <li>
-                <a href="courses.html">Courses</a>
+                <a href="trainer.html"style="color: white;">Trainer</a>
             </li>
+           
             <li>
-                <a href="achivements.html">Achivement</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html"style="color: white;">Contact</a>
             </li>
         </ul>
 
     </nav>
 
     <div class="main-cont">
-        <h1>Home Section </h1>
+    
+        <div style=" color: white; width: 300px; margin-left: 10px; margin-top: 100px;   text-align: center;   display: flex;  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 30px;font-weight: bolder;">
+          FITNESS CLUB &nbsp <span><img src="images/fitness3.jpg" height="65px" width="70px"></span>
+        </div><br><br><br><br><br><br>
+     <h2  class="main-body-text"  style="color: white;">STEP UP YOUR </h2>
+     <h2 class="main-body-text" style="color: rgb(237, 94, 32);">FITNESS CHALLANGE</h2>
+     <h2 class="main-body-text"style="color: white;">WITH US</h2>
+        
+     <button class="btn-grad"><a href="#"  style="font-size: 20px;">JOIN US ></a></button>
+    
+    </div><br>
+
+<!-- /************************************* -->
+<div class="card-cont-main">
+<div class="card-cont">
+ <div class="card" style="width: 95%;">
+  <div class="card-body ">
+    <h1 class="card-title">MODERN EQUIPMENT</h1>
+    <p class="card-text">Modern gym equipment is designed to enhance workout efficiency, comfort, and results. With advancements in technology, many machines now offer adjustable resistance, personalized settings, and even smart tracking features. From cardio machines like treadmills with interactive screens to strength training machines that guide users through proper form, the latest equipment caters to both beginners and athletes.</p>
+    <a href="#" class="btn btn-white text-danger">MORE DETAILS </a>
+  </div>
+ </div><br>
+  <div class="card" style="width: 95%; ">
+    <div class="card-body ">
+      <h1 class="card-title">PROFFESIONAL TRAINER</h1>
+      <p class="card-text">A professional gym trainer is a certified fitness expert who guides individuals in achieving their health and fitness goals. They create personalized workout plans tailored to a person's needs, ensuring proper form, technique, and safety. With their knowledge of exercise science, nutrition, and injury prevention, they motivate and educate clients to improve strength, endurance, and overall fitness.</p>
+      <a href="#" class="btn btn-white text-danger">MORE DETAILS</a>
+    </div>
+   </div><br>
+  <div class="card" style="width: 95%;">
+    <div class="card-body ">
+      <h1 class="card-title">HEALTHY DIET PLAN</h1>
+      <p class="card-text">A healthy diet plan focuses on balanced nutrition, incorporating a variety of whole foods to support overall health and well-being. It emphasizes lean proteins, whole grains, healthy fats, and plenty of fruits and vegetables. Portion control and hydration are key components, along with minimizing processed foods, added sugars, and excessive salt.</p>
+      <a href="#" class="btn btn-white text-danger">MORE DETAILS</a>
+    </div>
+</div>
+</div>
+</div><br><br>
+
+<h1 style="text-align: center; font-weight: bolder; "  class="heading1">Our Videos</h1><br>
+   
+<div style="height: 100%; width: 100%;"  class="video">
+ 
+    <video height="500" width="350" controls>
+        <source src="images/video1.mp4">
+    </video><br>
+    <video height="500" width="350" controls>
+        <source src="images/video2.mp4">
+    </video>
+  <br>
+
+    <video height="500" width="350" controls class="video3">
+        <source src="images/video3.mp4">
+    </video>
+  </div>
+
+<br><br>
+<div class="last-cont">
+<h1 style="text-align: center;  font-weight: bolder; margin-top: 40px;" class="heading2">Amenities & Equipment</h1><br>
+<div class="images">
+  
+   <div class="img1">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/aminities1.avif" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chest Press Machine</h5>
+          <p class="card-text">This machine involves you sitting upright and you using your arms to push a load with a weight plate away from your chest and back to where you are.a chest press machine allows you to utilize lifting heavy weights.</p>
+          <a href="#" class="btn text-primary btn-md">More Details</a>
+        </div>
+      </div><br>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/amenities5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Top of the Class Machines on the Ground Floor</h5>
+          <p class="card-text">On the ground floor, we have top of the class machines for your workouts. 
+
+            Regularly maintained and the best in class. The most experienced trainers to guide you. 
+            
+            Book a free trail today!</p>
+            <a href="#" class="btn text-primary btn-md">More Details</a>
+          </div>
+      </div><br>
+    </div>
+  <div class="img2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/aminities2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Cardio Machines on the First Floor</h5>
+          <p class="card-text">On the first floor, we have a lineup of cardio machines for you. 
+
+            Get that workout with our wide range of cardio machines in the gym. 
+            
+            Regularly maintained and the best in class.
+            
+            Book a free trail today!</p>
+            <a href="#" class="btn text-primary btn-md">More Details</a>
+          </div>
+      </div><br>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="images/aminities4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Chest Fly Machine</h5>
+          <p class="card-text">Adjust the machine to your physique
+            Place your feet flat on the floor, sit up tall and relax your body.
+            Grab hold of the handles and make sure your palms are facing forward.
+            Slowly press your arms together in front of your chest and keep.</p>
+            <a href="#" class="btn text-primary btn-md">More Details</a>
+          </div>
+      </div>
+   </div>
+</div>
+</div>
+
+</div>
+<div class="footer">
+  <div class="">
+    <p style="text-align: center; font-size: 20px;">Copyright © 2025 FitnessClub.</p>
+    <p style="text-align: center; font-size: 15px;"> <i class="fa-solid fa-envelope"></i> fitnessclub@gmail.com 
+  
+      <i class="fa-solid fa-phone"></i> +91 123567899</p>
     </div>
   </div>
 
